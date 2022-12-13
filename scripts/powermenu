@@ -1,0 +1,6 @@
+TURNOFF=`echo  "Yes\nNo" | dmenu -fn "Hack Nerd Font Bold:18px" -nb "#1d1f21" -nf "#c5c8c6" -sb "#85678f" -sf "#c5c8c6" -l 2 -p "Shutdown?"`;
+
+if [ "$TURNOFF" = "Yes" ];
+then
+	sudo shutdown -P now;
+fi
