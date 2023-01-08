@@ -2,5 +2,5 @@ TURNOFF=`echo  "Yes\nNo" | dmenu -fn "Hack Nerd Font Bold:18px" -nb "#1d1f21" -n
 
 if [ "$TURNOFF" = "Yes" ];
 then
-	sudo shutdown -P now;
+	sudo poweroff;
 fi

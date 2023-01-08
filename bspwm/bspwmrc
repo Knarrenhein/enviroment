@@ -16,10 +16,12 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Firefox desktop='^4'
+bspc rule -a TelegramDesktop desktop='^5'
 
-nitrogen --restore &
+#nitrogen --restore &
+xrdb ~/.Xresources &
 picom &
 ~/.config/polybar/launch.sh &
-#dunst &
+dunst &
 pulseaudio &
-emacs --daemon &
